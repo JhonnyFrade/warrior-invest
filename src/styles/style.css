@@ -1,0 +1,260 @@
+:root {
+    --dark: #19162B;
+    --dark-blue: #1C425C;
+    --light-blue: #5BBDC4;
+    --yellow: #FFFFC1;
+    --light: #f5f5f5;
+    --green: #BDF271;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: var(--light);
+}
+
+body {
+    background: var(--dark-blue);
+    -webkit-font-smoothing: antialiased;
+}
+
+.logoLion {
+    width: 3rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--dark);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 var(--dark);
+
+    gap: .5rem;
+}
+
+ .companyName {
+    color: var(--light);
+    font-weight: 400;
+}
+
+ .companyName span {
+    color: var(--green);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 4rem 2rem;
+
+}
+
+
+
+.stockCard {
+    margin: auto;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    gap: .2rem;
+
+    border-top: 1px solid var(--light-blue);
+    border-left: 1px solid var(--light-blue);
+    border-radius: .5rem;
+ 
+    box-shadow: 0 8px 32px 0 var(--dark);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+
+.stockCard:hover {
+    background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
+}
+
+.stockCard .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.stockCard .logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.stockCard .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .2rem;
+    
+}
+
+.stockCard .mainContent h1 {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.stockCard .mainContent p {
+    font-weight: 300;
+    font-size: 1rem;
+    opacity: .6;
+    color: var(--green);
+}
+
+.stockCard .mainContent h2 {
+    color: var(--green);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: .8rem;
+}
+
+.stockCard .mainContent span {
+    font-size: 1rem;
+    color: var(--light);
+    font-weight: 300;
+}
+
+.stockCard .mainContent button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 1rem .3rem;
+    margin-top: 1.5rem;
+
+    background: var(--green);
+    border: none;
+    border-radius: .5rem;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: .8;
+}
+
+.stockCard .mainContent button:hover {
+    opacity: 1;
+}
+
+.stockCard .mainContent h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--green);
+}
+
+.stockCard .mainContent h3 span {
+    font-size: .8rem;
+}
+
+.stockCard .percent  {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+footer {
+    background: var(--dark);
+    padding: 2rem;
+}
+
+footer .content {
+    display: flex;
+    
+    margin: 0 10%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer .content .company {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .content .company a {
+    color: var(--light);
+    opacity: .5;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: -.5rem;
+}
+
+footer .content .company a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+footer .content .inc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+footer .content .inc .desc p {
+    opacity: .5;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: -.5rem;
+}
+
+footer .content .inc .email {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .content .inc .email label {
+    font-size: .8rem;
+    opacity: .5;
+}
+
+footer .content .inc .email input {
+    color: var(--light);
+    padding: .5rem;
+    background: var(--dark);
+    border-radius: .5rem;
+    border: 1px solid var(--light);
+}
+
+footer .content .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .content .contact a img {
+    opacity: .5;
+}
+
+footer .content .contact a img:hover {
+    opacity: 1;
+}
+
+footer .content .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
