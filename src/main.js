@@ -157,9 +157,15 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
         else SAPPercent.style.color = green;
     }
 
-    console.log(data)
-
-   
+    let showPopup1 = document.getElementById('showPopup1')
+    showPopup1.addEventListener('click', function() {
+        document.getElementById('popup1').classList.add("active");
+    })
+    
+    let closePopup1 = document.getElementById('closePopup1')
+    closePopup1.addEventListener('click', function() {
+        document.getElementById('popup1').classList.remove("active");
+    })
 
     percentColor()
 })
