@@ -186,6 +186,14 @@ main {
 
 }
 
+.popup .content h3 {
+    color: var(--green);
+}
+
+.popup .content span {
+    color: var(--dark);
+}
+
 .popup .close-btn {
 
     display: flex;

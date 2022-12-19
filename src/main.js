@@ -68,9 +68,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     BBName.innerHTML = data.results[0].longName     
     BBSymbol.innerHTML = data.results[0].symbol
     BBPrice.innerHTML += data.results[0].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-   // BBMax.innerHTML += data.results[0].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-   // BBMin.innerHTML += data.results[0].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-   // BBOpen.innerHTML += data.results[0].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    BBMax.innerHTML += data.results[0].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    BBMin.innerHTML += data.results[0].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    BBOpen.innerHTML += data.results[0].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     BBPercent.innerHTML = data.results[0].regularMarketChangePercent.toFixed(2) + `%`
     BBImg.src = data.results[0].logourl
 
@@ -78,9 +78,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     PTRName.innerHTML = data.results[1].longName     
     PTRSymbol.innerHTML = data.results[1].symbol
     PTRPrice.innerHTML += data.results[1].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-    //PTRMax.innerHTML += data.results[1].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-    //PTRMin.innerHTML += data.results[1].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-    //PTROpen.innerHTML += data.results[1].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    PTRMax.innerHTML += data.results[1].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    PTRMin.innerHTML += data.results[1].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    PTROpen.innerHTML += data.results[1].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     PTRPercent.innerHTML = data.results[1].regularMarketChangePercent.toFixed(2) + `%`
     PTRImg.src = data.results[1].logourl
 
@@ -165,6 +165,16 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     let closePopup1 = document.getElementById('closePopup1')
     closePopup1.addEventListener('click', function() {
         document.getElementById('popup1').classList.remove("active");
+    })
+
+    let showPopup2 = document.getElementById('showPopup2')
+    showPopup2.addEventListener('click', function() {
+        document.getElementById('popup2').classList.add("active");
+    })
+    
+    let closePopup2 = document.getElementById('closePopup2')
+    closePopup2.addEventListener('click', function() {
+        document.getElementById('popup2').classList.remove("active");
     })
 
     percentColor()

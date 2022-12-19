@@ -24,8 +24,24 @@
         <div class="popup" id="popup1">
             <div class="overlay"></div>
             <div class="content">
-                <h1>testing</h1>
-                <button class="close-btn" onclick="closePopup1()" id="closePopup1">
+                <h3 id="BBMax"> <span>Maxima do dia: </span> </h3>
+                <h3 id="BBMin"> <span>Minima do dia: </span> </h3>
+                <h3 id="BBOpen"> <span>Preço de abertura: </span> </h3>
+                
+                <button class="close-btn" id="closePopup1">
+                    &times;
+                </button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup2">
+            <div class="overlay"></div>
+            <div class="content">
+                <h3 id="PTRMax"><span>Maxima do dia: </span></h3>
+                <h3 id="PTRMin"><span>Minima do dia: </span></h3>
+                <h3 id="PTROpen"><span>Preço de abertura: </span></h3>
+                
+                <button class="close-btn" id="closePopup2">
                     &times;
                 </button>
             </div>
@@ -42,12 +58,7 @@
                     <h1 id="BBName"></h1>
                     <p id="BBSymbol"></p>
                     <h2 id="BBPrice"> <span>A partir de: </span></h2>
-                    <button id="showPopup1" onclick="showPopup()">MAIS DETALHES</button>
-                <!--
-                    <h3 id="BBMax"> <span>Maxima do dia: </span> </h3>
-                    <h3 id="BBMin"> <span>Minima do dia: </span> </h3>
-                    <h3 id="BBOpen"> <span>Preço de abertura: </span> </h3>
-                --> 
+                    <button id="showPopup1">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">        
@@ -64,12 +75,7 @@
                     <h1 id="PTRName"></h1>
                     <p id="PTRSymbol"></p>
                     <h2 id="PTRPrice"><span>A partir de: </span></h2>
-                    <button>MAIS DETALHES</button>
-                    <!--
-                        <h3 id="PTRMax"><span>Maxima do dia: </span></h3>
-                        <h3 id="PTRMin"><span>Minima do dia: </span></h3>
-                        <h3 id="PTROpen"><span>Preço de abertura: </span></h3>
-                    -->
+                    <button id="showPopup2">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">
