@@ -37,7 +37,6 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 var(--dark);
-
     gap: .5rem;
 }
 
@@ -57,8 +56,6 @@ main {
     margin: 4rem 2rem;
 
 }
-
-
 
 .stockCard {
     margin: auto;
@@ -313,7 +310,6 @@ footer .content .news {
     justify-content: center;
     margin-bottom: 1rem;
 }
-
 
 /* responsive */
 
