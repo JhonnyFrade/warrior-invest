@@ -2,7 +2,7 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     return response.json()
 }).then( data => {
 
-/*    //banco do brasil
+    //banco do brasil
     let BBName = document.getElementById('BBName')
     let BBSymbol = document.getElementById('BBSymbol')
     let BBPrice = document.getElementById('BBPrice')
@@ -61,7 +61,7 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     let SAPOpen = document.getElementById('SAPOpen')
     let SAPImg = document.getElementById('SAPImg')
     let SAPPercent = document.getElementById('SAPPercent')
-*/
+    
     //-----------------------------------------------------------
 
     //banco do brasil
