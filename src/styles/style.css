@@ -32,6 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: min-content(700px);
     padding: 1rem;
     background: var(--dark);
     backdrop-filter: blur(10px);
@@ -54,7 +55,8 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin: 4rem 2rem;
-
+    width: min-content(700px);
+    justify-content: center;
 }
 
 .stockCard {
@@ -107,6 +109,7 @@ main {
 .stockCard .mainContent h1 {
     font-size: 1.2rem;
     display: flex;
+    text-align: center;
 }
 
 .stockCard .mainContent p {
@@ -120,7 +123,6 @@ main {
     color: var(--green);
     font-weight: 400;
     font-size: 1.2rem;
-    margin-top: .8rem;
 }
 
 .stockCard .mainContent span {
@@ -148,16 +150,6 @@ main {
 
 .stockCard .mainContent button:hover {
     opacity: 1;
-}
-
-.stockCard .mainContent h3 {
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--green);
-}
-
-.stockCard .mainContent h3 span {
-    font-size: .8rem;
 }
 
 .stockCard .percent  {
@@ -309,18 +301,4 @@ footer .content .news {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-}
-
-/* responsive */
-
-@media screen and (max-width: 1400px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    main {
-        grid-template-columns: 1fr;
-    }
 }

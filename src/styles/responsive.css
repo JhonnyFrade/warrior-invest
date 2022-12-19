@@ -1,0 +1,67 @@
+@media screen and (max-width: 1400px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stockCard {
+        padding: .8rem;
+        grid-template-columns: 1fr 3fr 1fr;
+        width: 45vw;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    .stockCard {
+        padding: .8rem;
+        grid-template-columns: 1fr 3fr 1fr;
+        width: 95vw;
+    }
+
+    .stockCard .logo {
+        margin: 0;
+    }
+
+    .stockCard .logo img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .stockCard .mainContent {
+        row-gap: .2rem;
+    }
+
+    .stockCard .mainContent h1 {
+        font-size: 1rem;
+        
+    }
+
+    .stockCard .mainContent p {
+
+        font-size: 1rem;
+    }
+    
+    .stockCard .mainContent h2 {
+        font-size: 1rem;
+    }
+
+    .stockCard .mainContent span {
+        font-size: .8rem;
+    }
+
+    .stockCard .mainContent button {
+        width: 80%;
+        font-size: .8rem;
+    }
+
+    .stockCard .percent p {
+        font-size: .8rem;
+    }
+
+}
+
