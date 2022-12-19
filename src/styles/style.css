@@ -313,3 +313,18 @@ footer .content .news {
     justify-content: center;
     margin-bottom: 1rem;
 }
+
+
+/* responsivity */
+
+@media screen and (max-width: 1400px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
