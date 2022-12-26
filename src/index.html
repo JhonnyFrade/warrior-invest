@@ -47,6 +47,58 @@
             </div>
         </div>
 
+        <div class="popup" id="popup3">
+            <div class="overlay"></div>
+            <div class="content">
+                <h3 id="TAEMax"><span>Maxima do dia: </span></h3>
+                <h3 id="TAEMin"><span>Minima do dia: </span></h3>
+                <h3 id="TAEOpen"><span>Preço de abertura: </span></h3>
+                
+                <button class="close-btn" id="closePopup3">
+                    &times;
+                </button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup4">
+            <div class="overlay"></div>
+            <div class="content">
+                <h3 id="COPMax"><span>Maxima do dia: </span></h3>
+                <h3 id="COPMin"><span>Minima do dia: </span></h3>
+                <h3 id="COPOpen"><span>Preço de abertura: </span></h3>
+                
+                <button class="close-btn" id="closePopup4">
+                    &times;
+                </button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup5">
+            <div class="overlay"></div>
+            <div class="content">
+                <h3 id="VALMax"><span>Maxima do dia: </span></h3>
+                <h3 id="VALMin"><span>Minima do dia: </span></h3>
+                <h3 id="VALOpen"><span>Preço de abertura: </span></h3>
+                
+                <button class="close-btn" id="closePopup5">
+                    &times;
+                </button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup6">
+            <div class="overlay"></div>
+            <div class="content">
+                <h3 id="SAPMax"><span>Maxima do dia: </span></h3>
+                <h3 id="SAPMin"><span>Minima do dia: </span></h3>
+                <h3 id="SAPOpen"><span>Preço de abertura: </span></h3>
+                
+                <button class="close-btn" id="closePopup6">
+                    &times;
+                </button>
+            </div>
+        </div>
+
         <main>
     <!------------------------------Banco do Brasil----------------------------------->        
             <div class="stockCard">
@@ -93,12 +145,7 @@
                     <h1 id="TAEName"></h1>
                     <p id="TAESymbol"></p>
                     <h2 id="TAEPrice"><span>A partir de: </span></h2>
-                    <button>MAIS DETALHES</button>
-                    <!--
-                        <h3 id="TAEMax"><span>Maxima do dia: </span></h3>
-                        <h3 id="TAEMin"><span>Minima do dia: </span></h3>
-                        <h3 id="TAEOpen"><span>Preço de abertura: </span></h3>
-                    -->
+                    <button id="showPopup3">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">
@@ -116,12 +163,7 @@
                     <h1 id="COPName"></h1>
                     <p id="COPSymbol"></p>
                     <h2 id="COPPrice"><span>A partir de: </span></h2>
-                    <button>MAIS DETALHES</button>
-                    <!--
-                        <h3 id="COPMax"><span>Maxima do dia: </span></h3>
-                        <h3 id="COPMin"><span>Minima do dia: </span></h3>
-                        <h3 id="COPOpen"><span>Preço de abertura: </span></h3>
-                    -->
+                    <button id="showPopup4">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">
@@ -138,12 +180,7 @@
                     <h1 id="VALName"></h1>
                     <p id="VALSymbol"></p>
                     <h2 id="VALPrice"><span>A partir de: </span></h2>
-                    <button>MAIS DETALHES</button>
-                    <!--
-                        <h3 id="VALMax"><span>Maxima do dia: </span></h3>
-                        <h3 id="VALMin"><span>Minima do dia: </span></h3>
-                        <h3 id="VALOpen"><span>Preço de abertura: </span></h3>
-                    -->
+                    <button id="showPopup5">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">
@@ -160,12 +197,7 @@
                     <h1 id="SAPName"></h1>
                     <p id="SAPSymbol"></p>
                     <h2 id="SAPPrice"><span>A partir de: </span></h2>
-                    <button>MAIS DETALHES</button>
-                    <!--
-                        <h3 id="SAPMax"><span>Maxima do dia: </span></h3>
-                        <h3 id="SAPMin"><span>Minima do dia: </span></h3>
-                        <h3 id="SAPOpen"><span>Preço de abertura: </span></h3>
-                    -->
+                    <button id="showPopup6">MAIS DETALHES</button>
                 </div>
 
                 <div class="percent">
@@ -173,6 +205,8 @@
                 </div>
             </div>
         </main>
+
+
 
         <footer>
             <div class="content">

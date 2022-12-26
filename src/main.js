@@ -88,9 +88,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     TAEName.innerHTML = data.results[2].longName     
     TAESymbol.innerHTML = data.results[2].symbol
     TAEPrice.innerHTML += data.results[2].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-    //TAEMax.innerHTML += data.results[2].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-    //TAEMin.innerHTML += data.results[2].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-    //TAEOpen.innerHTML += data.results[2].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    TAEMax.innerHTML += data.results[2].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    TAEMin.innerHTML += data.results[2].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    TAEOpen.innerHTML += data.results[2].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     TAEPercent.innerHTML = data.results[2].regularMarketChangePercent.toFixed(2) + `%`
     TAEImg.src = data.results[2].logourl
 
@@ -98,9 +98,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     COPName.innerHTML = data.results[3].longName     
     COPSymbol.innerHTML = data.results[3].symbol
     COPPrice.innerHTML += data.results[3].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-    //COPMax.innerHTML += data.results[3].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-    //COPMin.innerHTML += data.results[3].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-    //COPOpen.innerHTML += data.results[3].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    COPMax.innerHTML += data.results[3].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    COPMin.innerHTML += data.results[3].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    COPOpen.innerHTML += data.results[3].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     COPPercent.innerHTML = data.results[3].regularMarketChangePercent.toFixed(2) + `%`
     COPImg.src = data.results[3].logourl
 
@@ -108,9 +108,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     VALName.innerHTML = data.results[4].longName     
     VALSymbol.innerHTML = data.results[4].symbol
     VALPrice.innerHTML += data.results[4].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-    //VALMax.innerHTML += data.results[4].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-    //VALMin.innerHTML += data.results[4].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-    //VALOpen.innerHTML += data.results[4].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    VALMax.innerHTML += data.results[4].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    VALMin.innerHTML += data.results[4].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    VALOpen.innerHTML += data.results[4].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     VALPercent.innerHTML = data.results[4].regularMarketChangePercent.toFixed(2) + `%`
     VALImg.src = data.results[4].logourl
 
@@ -118,9 +118,9 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
     SAPName.innerHTML = data.results[5].longName     
     SAPSymbol.innerHTML = data.results[5].symbol
     SAPPrice.innerHTML += data.results[5].regularMarketPrice + ` <span> ${data.results[0].currency}</span>`
-    //SAPMax.innerHTML += data.results[5].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
-    //SAPMin.innerHTML += data.results[5].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
-    //SAPOpen.innerHTML += data.results[5].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
+    SAPMax.innerHTML += data.results[5].regularMarketDayHigh + ` <span> ${data.results[0].currency}</span>`
+    SAPMin.innerHTML += data.results[5].regularMarketDayLow + ` <span> ${data.results[0].currency}</span>`
+    SAPOpen.innerHTML += data.results[5].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     SAPPercent.innerHTML = data.results[5].regularMarketChangePercent.toFixed(2) + `%`
     SAPImg.src = data.results[5].logourl
 
@@ -156,6 +156,8 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
         if (percent5 < 0) SAPPercent.style.color = red;
         else SAPPercent.style.color = green;
     }
+    percentColor()
+})
 
     let showPopup1 = document.getElementById('showPopup1')
     showPopup1.addEventListener('click', function() {
@@ -177,5 +179,42 @@ fetch(`https://brapi.dev/api/quote/BBAS3%2CPETR4%2CTAEE11%2CCPLE3%2CVALE3%2CSAPR
         document.getElementById('popup2').classList.remove("active");
     })
 
-    percentColor()
-})
+    let showPopup3 = document.getElementById('showPopup3')
+    showPopup3.addEventListener('click', function() {
+        document.getElementById('popup3').classList.add("active");
+    })
+    
+    let closePopup3 = document.getElementById('closePopup3')
+    closePopup3.addEventListener('click', function() {
+        document.getElementById('popup3').classList.remove("active");
+    })
+    
+    let showPopup4 = document.getElementById('showPopup4')
+    showPopup4.addEventListener('click', function() {
+        document.getElementById('popup4').classList.add("active");
+    })
+    
+    let closePopup4 = document.getElementById('closePopup4')
+    closePopup4.addEventListener('click', function() {
+        document.getElementById('popup4').classList.remove("active");
+    })
+
+    let showPopup5 = document.getElementById('showPopup5')
+    showPopup5.addEventListener('click', function() {
+        document.getElementById('popup5').classList.add("active");
+    })
+    
+    let closePopup5 = document.getElementById('closePopup5')
+    closePopup5.addEventListener('click', function() {
+        document.getElementById('popup5').classList.remove("active");
+    })
+
+    let showPopup6 = document.getElementById('showPopup6')
+    showPopup6.addEventListener('click', function() {
+        document.getElementById('popup6').classList.add("active");
+    })
+    
+    let closePopup6 = document.getElementById('closePopup6')
+    closePopup6.addEventListener('click', function() {
+        document.getElementById('popup6').classList.remove("active");
+    })
