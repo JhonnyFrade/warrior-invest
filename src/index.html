@@ -12,15 +12,288 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="shortcut icon" href="./imgs/warrior invest.png" type="image/x-icon">
     </head>
     <body>
+
+        <section>
+            <div class="section1">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="logo">
+                                <img src="/src/imgs/warrior invest.png" alt="">
+                                <span class="nav-item">Warrior Invest</span>
+                            </a>
+                        </li>
         
-       
-        <header>
-         <h1>Ações</h1>
-        </header>
+                        <li class="selected">
+                            <a href="">
+                                <i class="material-symbols-outlined">
+                                    monitoring
+                                </i>
+                                <span class="nav-item">Ações</span>
+                            </a>
+                        </li>
         
+                        <li>
+                            <a href="">
+                                <i class="material-symbols-outlined">
+                                    domain
+                                </i>
+                                <span class="nav-item">Fundos Imobiliários</span>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="">
+                                <i class="material-symbols-outlined">
+                                    currency_bitcoin
+                                    </i>
+                                <span class="nav-item">Criptos</span>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="">
+                                <i class="material-symbols-outlined">
+                                    settings
+                                </i>
+                                <span class="nav-item">configurações</span>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="" class="logout">
+                                <i class="material-symbols-outlined">
+                                    logout
+                                </i>
+                                <span class="nav-item">log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="section2">
+                <header>
+                    <h1>Ações</h1>
+                </header>
+
+                <main>
+            
+                    <!------------------------------Banco do Brasil----------------------------------->        
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="Logo do Banco Do Brasil" id="BBImg">
+                                </div>
+                                
+                                <div class="mainContent">
+                                    <h1 id="BBName"></h1>
+                                    <p id="BBSymbol"></p>
+                                    <h2 id="BBPrice"> <span>A partir de: </span></h2>
+                                    <button id="showPopup1">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">        
+                                    <p id="BBPercent"></p>
+                                </div>
+                            </div>
+                    <!---------------------------------Petrobras-------------------------------------->
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="PTRImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="PTRName"></h1>
+                                    <p id="PTRSymbol"></p>
+                                    <h2 id="PTRPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup2">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="PTRPercent"></p>
+                                </div>
+                
+                            </div>
+                    <!-------------------------------------Taesa-------------------------------------->
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="TAEImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="TAEName"></h1>
+                                    <p id="TAESymbol"></p>
+                                    <h2 id="TAEPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup3">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="TAEPercent"></p>
+                                </div>
+                
+                            </div>
+                    <!------------------------------------Copel--------------------------------------->
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="COPImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="COPName"></h1>
+                                    <p id="COPSymbol"></p>
+                                    <h2 id="COPPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup4">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="COPPercent"></p>
+                                </div>
+                            </div>
+                    <!-------------------------------------Vale--------------------------------------->
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="VALImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="VALName"></h1>
+                                    <p id="VALSymbol"></p>
+                                    <h2 id="VALPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup5">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="VALPercent"></p>
+                                </div>
+                            </div>
+                    <!-----------------------------------Sanepar-------------------------------------->
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="SAPImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="SAPName"></h1>
+                                    <p id="SAPSymbol"></p>
+                                    <h2 id="SAPPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup6">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="SAPPercent"></p>
+                                </div>
+                            </div>
+                    <!------------------------VIVO---------------------------------------------------->        
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="VIVImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="VIVName"></h1>
+                                    <p id="VIVSymbol"></p>
+                                    <h2 id="VIVPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup7">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="VIVPercent"></p>
+                                </div>
+                            </div>
+                    <!------------------------------------Gerdau-------------------------------------->        
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="GERImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="GERName"></h1>
+                                    <p id="GERSymbol"></p>
+                                    <h2 id="GERPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup8">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="GERPercent"></p>
+                                </div>
+                            </div>
+                    <!------------------------------------Unipar-------------------------------------->   
+                            <div class="stockCard">
+                                <div class="logo">
+                                    <img src="" alt="" id="UNIImg">
+                                </div>
+                
+                                <div class="mainContent">
+                                    <h1 id="UNIName"></h1>
+                                    <p id="UNISymbol"></p>
+                                    <h2 id="UNIPrice"><span>A partir de: </span></h2>
+                                    <button id="showPopup9">MAIS DETALHES</button>
+                                </div>
+                
+                                <div class="percent">
+                                    <p id="UNIPercent"></p>
+                                </div>
+                            </div>
+                    <!------------------------------------weg----------------------------------------->   
+                    <div class="stockCard">
+                        <div class="logo">
+                            <img src="" alt="" id="WEGImg">
+                        </div>
+        
+                        <div class="mainContent">
+                            <h1 id="WEGName"></h1>
+                            <p id="WEGSymbol"></p>
+                            <h2 id="WEGPrice"><span>A partir de: </span></h2>
+                            <button id="showPopup10">MAIS DETALHES</button>
+                        </div>
+        
+                        <div class="percent">
+                            <p id="WEGPercent"></p>
+                        </div>
+                    </div>
+                    <!----------------------------------vivara---------------------------------------->    
+                    <div class="stockCard">
+                        <div class="logo">
+                            <img src="" alt="" id="VARImg">
+                        </div>
+        
+                        <div class="mainContent">
+                            <h1 id="VARName"></h1>
+                            <p id="VARSymbol"></p>
+                            <h2 id="VARPrice"><span>A partir de: </span></h2>
+                            <button id="showPopup11">MAIS DETALHES</button>
+                        </div>
+        
+                        <div class="percent">
+                            <p id="VARPercent"></p>
+                        </div>
+                    </div>
+
+                    <!---------------------------------Itausa------------------------------------------>
+                    <div class="stockCard">
+                        <div class="logo">
+                            <img src="" alt="" id="ITAImg">
+                        </div>
+        
+                        <div class="mainContent">
+                            <h1 id="ITAName"></h1>
+                            <p id="ITASymbol"></p>
+                            <h2 id="ITAPrice"><span>A partir de: </span></h2>
+                            <button id="showPopup12">MAIS DETALHES</button>
+                        </div>
+        
+                        <div class="percent">
+                            <p id="ITAPercent"></p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
 
         <div class="popup" id="popup1">
             <div class="overlay"></div>
@@ -99,145 +372,6 @@
                 </button>
             </div>
         </div>
-
-        <main>
-    <!------------------------------Banco do Brasil----------------------------------->        
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="Logo do Banco Do Brasil" id="BBImg">
-                </div>
-                
-                <div class="mainContent">
-                    <h1 id="BBName"></h1>
-                    <p id="BBSymbol"></p>
-                    <h2 id="BBPrice"> <span>A partir de: </span></h2>
-                    <button id="showPopup1">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">        
-                    <p id="BBPercent"></p>
-                </div>
-            </div>
-    <!---------------------------------Petrobras-------------------------------------->
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="" id="PTRImg">
-                </div>
-
-                <div class="mainContent">
-                    <h1 id="PTRName"></h1>
-                    <p id="PTRSymbol"></p>
-                    <h2 id="PTRPrice"><span>A partir de: </span></h2>
-                    <button id="showPopup2">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">
-                    <p id="PTRPercent"></p>
-                </div>
-
-            </div>
-    <!-------------------------------------Taesa-------------------------------------->
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="" id="TAEImg">
-                </div>
-
-                <div class="mainContent">
-                    <h1 id="TAEName"></h1>
-                    <p id="TAESymbol"></p>
-                    <h2 id="TAEPrice"><span>A partir de: </span></h2>
-                    <button id="showPopup3">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">
-                    <p id="TAEPercent"></p>
-                </div>
-
-            </div>
-    <!------------------------------------Copel--------------------------------------->
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="" id="COPImg">
-                </div>
-
-                <div class="mainContent">
-                    <h1 id="COPName"></h1>
-                    <p id="COPSymbol"></p>
-                    <h2 id="COPPrice"><span>A partir de: </span></h2>
-                    <button id="showPopup4">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">
-                    <p id="COPPercent"></p>
-                </div>
-            </div>
-    <!-------------------------------------Vale--------------------------------------->
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="" id="VALImg">
-                </div>
-
-                <div class="mainContent">
-                    <h1 id="VALName"></h1>
-                    <p id="VALSymbol"></p>
-                    <h2 id="VALPrice"><span>A partir de: </span></h2>
-                    <button id="showPopup5">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">
-                    <p id="VALPercent"></p>
-                </div>
-            </div>
-    <!-----------------------------------Sanepar-------------------------------------->
-            <div class="stockCard">
-                <div class="logo">
-                    <img src="" alt="" id="SAPImg">
-                </div>
-
-                <div class="mainContent">
-                    <h1 id="SAPName"></h1>
-                    <p id="SAPSymbol"></p>
-                    <h2 id="SAPPrice"><span>A partir de: </span></h2>
-                    <button id="showPopup6">MAIS DETALHES</button>
-                </div>
-
-                <div class="percent">
-                    <p id="SAPPercent"></p>
-                </div>
-            </div>
-        </main>
-
-
-
-        <footer>
-            <div class="content">
-                <div class="company">
-                    
-                    <h1 class="companyName">Warrior <span>Invest</span></h1>
-                    <a href="#">Sobre</a>
-                    <a href="#">Política de privacidade</a>
-                    <a href="#">Termos de uso</a>
-                    <a href="#">Política de cookies</a>
-                </div>
-
-                <div class="inc">
-                    <div class="email">
-                        <label for="email">Receba as novidades por email</label>
-                        <input type="email" name="" id="email" placeholder="email@email.com">
-                    </div>
-
-                    <div class="desc">
-                        <p>© 2022 fradeww</p>
-                    </div>
-                </div>
-        
-                <div class="contact">
-                    <a href=""><img src="./imgs/instagram.png" alt=""></a>
-                    <a href=""><img src="./imgs/github-sign.png" alt=""></a>
-                    <a href=""><img src="./imgs/twitter-sign.png" alt=""></a>
-                </div>
-            </div>
-        </footer>
 
         <script src="acoes.js"></script>
     </body>

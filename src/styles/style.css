@@ -1,30 +1,21 @@
 :root {
     --light: #fff;
     --white: #F2F2F2;
-    --grey: #BFBFBF;
+    --grey: #D9D9D9;
+    --dark-grey: #737373;
     --light-blue: #5BBDC4;
     --yellow: #FFFFC1;
-    --dark: #0D0D0D;
+    --dark: #022601;
     --light-green: #BDF271;
-    --green: #428734;
+    --green: #3D7345;
 }
-/*
-
-:root {
-    --dark: #19162B;
-    --dark-blue: #1C425C;
-    --light-blue: #5BBDC4;
-    --yellow: #FFFFC1;
-    --light: #f5f5f5;
-    --green: #BDF271;
-}
-
-
-*/
 
 * {
     padding: 0;
     margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -35,12 +26,88 @@ html {
 }
 
 body {
+    display: grid;
     background: var(--white);
     -webkit-font-smoothing: antialiased;
 }
 
-.logoLion {
-    width: 3rem;
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: .1rem;
+    width: 280px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    z-index: 100;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+}
+
+.selected {
+    border-left: 8px solid var(--green);
+    background: var(--grey);
+}
+
+.selected i {
+    color: var(--green);
+}
+
+.selected span {
+    color: var(--green);
+}
+
+nav .logo {
+    display: flex;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+nav .logo:hover {
+    background: var(--white);
+}
+
+nav .logo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+nav .logo span {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+nav a {
+    color: var(--dark);
+    font-size: 1.2rem;
+    display: table;
+    width: 300px;
+    padding: 1.5rem 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: var(--grey);
+}
+
+nav a i {
+    position: relative;
+} 
+
+.nav-item {
+    position: relative;
+    margin-left: 1.2rem;
+    bottom: 5px;
+    font-weight: bold;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
 }
 
 header {
@@ -48,15 +115,16 @@ header {
     align-items: center;
     justify-content: flex-start;
     width: min-content(700px);
-    padding: .5rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    gap: .5rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--grey);
+    margin: 0 2rem;
 }
 
  header h1 {
     color: var(--dark);
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
  .companyName {
@@ -67,14 +135,17 @@ header {
     color: var(--light-green);
 }
 
-
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    margin: 4rem 2rem;
-    width: min-content(700px);
-    justify-content: center;
+    margin:  2rem;
+    align-items: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
 
 /*.stockCard {
@@ -256,94 +327,4 @@ main {
 .popup.active .content {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
-}
-
-footer {
-    background: var(--dark);
-    padding: 2rem;
-}
-
-footer .content {
-    display: flex;
-    
-    margin: 0 10%;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-footer .content .company {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-footer .content .company a {
-    color: var(--light);
-    opacity: .5;
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: -.5rem;
-}
-
-footer .content .company a:hover {
-    text-decoration: underline;
-    opacity: 1;
-}
-
-footer .content .inc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
-
-footer .content .inc .desc p {
-    opacity: .5;
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: -.5rem;
-}
-
-footer .content .inc .email {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-footer .content .inc .email label {
-    font-size: .8rem;
-    opacity: .5;
-}
-
-footer .content .inc .email input {
-    color: var(--light);
-    padding: .5rem;
-    background: var(--dark);
-    border-radius: .5rem;
-    border: 1px solid var(--light);
-}
-
-footer .content .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-footer .content .contact a img {
-    opacity: .5;
-}
-
-footer .content .contact a img:hover {
-    opacity: 1;
-}
-
-footer .content .news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
 }
