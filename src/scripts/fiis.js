@@ -52,15 +52,15 @@ fetch(`https://brapi.dev/api/quote/MXRF11%2CVISC11%2CXPML11%2CKNIP11%2CHGLG11%2C
     let HGLImg = document.getElementById('HGLImg')
     let HGLPercent = document.getElementById('HGLPercent')
 
-        //XPLG11
-        let XPLName = document.getElementById('XPLName')
-        let XPLSymbol = document.getElementById('XPLSymbol')
-        let XPLPrice = document.getElementById('XPLPrice')
-        let XPLMax = document.getElementById('XPLMax')
-        let XPLMin = document.getElementById('XPLMin')
-        let XPLOpen = document.getElementById('XPLOpen')
-        let XPLImg = document.getElementById('XPLImg')
-        let XPLPercent = document.getElementById('XPLPercent')
+    //XPLG11
+    let XPLName = document.getElementById('XPLName')
+    let XPLSymbol = document.getElementById('XPLSymbol')
+    let XPLPrice = document.getElementById('XPLPrice')
+    let XPLMax = document.getElementById('XPLMax')
+    let XPLMin = document.getElementById('XPLMin')
+    let XPLOpen = document.getElementById('XPLOpen')
+    let XPLImg = document.getElementById('XPLImg')
+    let XPLPercent = document.getElementById('XPLPercent')
 
 //-----------------------------------------------------------------
 
