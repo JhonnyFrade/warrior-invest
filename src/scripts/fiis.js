@@ -123,4 +123,38 @@ fetch(`https://brapi.dev/api/quote/MXRF11%2CVISC11%2CXPML11%2CKNIP11%2CHGLG11%2C
     // XPLOpen.innerHTML += data.results[5].regularMarketOpen + `<span> ${data.results[0].currency}</span>`
     XPLPercent.innerHTML = data.results[5].regularMarketChangePercent.toFixed(2) + `%`
     XPLImg.src = data.results[5].logourl
+
+
+    //show variation color
+    function percentColor() {
+
+        const red = '#F25050'
+        const green = '#24EE76'
+
+        const percent0 = data.results[0].regularMarketChangePercent
+        const percent1 = data.results[1].regularMarketChangePercent
+        const percent2 = data.results[2].regularMarketChangePercent
+        const percent3 = data.results[3].regularMarketChangePercent
+        const percent4 = data.results[4].regularMarketChangePercent
+        const percent5 = data.results[5].regularMarketChangePercent
+
+        if (percent0 < 0) MXPercent.style.color =  red;
+        else MXPercent.style.color = green;
+
+        if (percent1 < 0) VISPercent.style.color = red;
+        else VISPercent.style.color = green;
+
+        if (percent2 < 0) XPMPercent.style.color = red;
+        else XPMPercent.style.color = green;
+
+        if (percent3 < 0) KNIPercent.style.color = red;
+        else KNIPercent.style.color = green;
+        
+        if (percent4 < 0) HGLPercent.style.color = red;
+        else HGLPercent.style.color = green;
+
+        if (percent5 < 0) XPLPercent.style.color = red;
+        else XPLPercent.style.color = green;
+    }
+    percentColor()
 })
