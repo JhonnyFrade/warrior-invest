@@ -1,11 +1,11 @@
 :root {
-    --light: #fff;
-    --white: #F2F2F2;
-    --grey: #D9D9D9;
+    --light: #F2F2F2;
+    --white: #D9D9D9;
+    --grey: #BFBFBF;
     --dark-grey: #737373;
     --light-blue: #5BBDC4;
     --yellow: #FFFFC1;
-    --dark: #022601;
+    --dark: #404040;
     --light-green: #BDF271;
     --green: #3D7345;
 }
@@ -216,14 +216,12 @@ section {
     width: 60%;
     padding: 1rem .3rem;
     margin-top: 1.5rem;
-
+    opacity: 0.8;
     background: var(--green);
-    border: none;
     border-radius: .5rem;
-    color: var(--white);
+    color: var(--light);
     font-weight: 700;
     font-size: 1rem;
-    opacity: .8;
 }
 
 .stockCard .mainContent button:hover {
