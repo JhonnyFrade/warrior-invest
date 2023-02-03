@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    width: 100%;
+    padding: 1.25rem 0; 
+
+    color: var(--white);
+    background: var(--cian)
+}

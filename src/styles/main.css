@@ -1,0 +1,41 @@
+:root {
+    --white: #Fff;
+    --background: #F2F2F2;
+    --dark: #002333;
+    --grey: #B4BEC9;
+    --cian: #159A9C;
+    --black: #09090A;
+    --dark-green: #02733E;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    min-width: 1280px;
+    margin: auto;
+    padding: 10rem 0;
+}
