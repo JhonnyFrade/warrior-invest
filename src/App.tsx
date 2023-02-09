@@ -11,34 +11,6 @@ export function App() {
 
         <div className='content'>
           <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
-
-          <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
-
-          <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
-
-          <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
-
-          <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
-
-          <StockCard />
-          <StockCard />
-          <StockCard />
-          <StockCard />
         </div>
 
     </div>
