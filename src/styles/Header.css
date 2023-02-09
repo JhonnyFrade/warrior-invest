@@ -9,3 +9,11 @@ header {
     color: var(--white);
     background: var(--cian)
 }
+
+header input {
+    padding: .8rem;
+    width: 20rem;
+    border: none;
+    border-radius: .5rem;
+}
+
