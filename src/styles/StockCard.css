@@ -10,6 +10,8 @@
     background: var(--white);
     color: var(--white);
     border-radius: .5rem;
+
+    box-shadow: 0 1px 8px var(--grey);
 }
 
 .card .img {
