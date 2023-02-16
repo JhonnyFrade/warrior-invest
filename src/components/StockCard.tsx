@@ -3,7 +3,7 @@ import '../styles/StockCard.css'
 
 
 
-export const StockCard = () => {
+export const StockCard = (props) => {
 
     const  info = useApi()
 
@@ -13,13 +13,13 @@ export const StockCard = () => {
             {Object.values(info).map((repo, i) => {
                           return (
                               <>
-                              <div className="img"><img src={repo?.results[i].logourl} alt="" /></div>
-                               <div className="main-content" key={i}>
-                                  <h2>{repo?.results[i].shortName}</h2>
-                                  <h3>{repo?.results[i].symbol}</h3>
-                                  <p>A partir de R$ <span>{repo?.results[i].regularMarketPrice}</span> </p>
+                              <div className="img"><img src={repo?.results[props.idx].logourl} alt="" /></div>
+                               <div className="main-content" key={props}>
+                                  <h2>{repo?.results[props.idx].shortName}</h2>
+                                  <h3>{repo?.results[props.idx].symbol}</h3>
+                                  <p>A partir de R$ <span>{repo?.results[props.idx].regularMarketPrice}</span> </p>
                                </div>
-                              <div className="percent"><p>{repo?.results[i].regularMarketChangePercent}</p></div>
+                              <div className="percent"><p>{repo?.results[props.idx].regularMarketChangePercent}</p></div>
                               </>
                           )
                       })}
